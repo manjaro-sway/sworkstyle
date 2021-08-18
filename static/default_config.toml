@@ -46,11 +46,17 @@ fallback = ''
 'thunderbird' = ''
 'evolution' = ''
 
-## ides
+## ide
 'code' = '﬏'
 'Code' = '﬏'
 'code-oss' = ''
 '/IntelliJ/' = ''
+
+# messenger
+'whatsapp-for-linux' = ''
+'Slack' = ''
+'/Telegram/' = ''
+'/Microsoft Teams/' = ''
 
 ## additional applications
 'balena-etcher' = ''
@@ -59,12 +65,9 @@ fallback = ''
 'org.qbittorrent.qBittorrent' = ''
 'Insomnia' = ''
 'Bitwarden' = ''
-'Slack' = ''
-'/Microsoft Teams/' = ''
 'Spotify' = ''
 'Alacritty' = ''
 'kitty' = ''
 'font-manager' = ''
-'/Telegram/' = ''
 'lutris' = ''
 '/Wine/' = ''
