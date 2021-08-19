@@ -58,6 +58,9 @@ fallback = ''
 '/Telegram/' = ''
 '/Microsoft Teams/' = ''
 
+## auth
+'polkit-gnome-authentication-agent-1' = ''
+
 ## additional applications
 'balena-etcher' = ''
 'Steam' = ''
