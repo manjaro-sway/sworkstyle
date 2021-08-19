@@ -52,11 +52,16 @@ fallback = ''
 'code-oss' = ''
 '/IntelliJ/' = ''
 
+<<<<<<< Updated upstream
 # messenger
 'whatsapp-for-linux' = ''
 'Slack' = ''
 '/Telegram/' = ''
 '/Microsoft Teams/' = ''
+=======
+## auth
+'polkit-gnome-authentication-agent-1' = ''
+>>>>>>> Stashed changes
 
 ## additional applications
 'balena-etcher' = ''
