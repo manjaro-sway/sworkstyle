@@ -4,9 +4,9 @@
 pkgname=sworkstyle
 _pkgname=swayest_workstyle
 pkgver=1.3.2
-pkgrel=1
+pkgrel=3
 pkgdesc="Swayest Workstyle - This tool will rename workspaces to the icons configured. Mainly meant for Sway WM"
-arch=("x86_64")
+arch=("x86_64" "aarch64")
 url="https://github.com/Lyr-7D1h/swayest_workstyle"
 license=("MIT")
 depends=("gcc-libs")
@@ -14,9 +14,14 @@ optdepends=("otf-font-awesome")
 makedepends=("cargo")
 conflicts=(sworkstyle-git)
 source=("$_pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz"
-        "sworkstyle.man")
+    "sworkstyle.man")
 sha256sums=('5796bfb2f868d2e4f6bfb63750588f282a57fb48e003f3d66c67b15c0e957a5c'
-            'd16f4284fe6419603db058b878a32a56574a51409648a6ddbd1b516d50cb3eb7')
+    'd16f4284fe6419603db058b878a32a56574a51409648a6ddbd1b516d50cb3eb7')
+
+prepare() {
+    cd "$_pkgname-$pkgver"
+    cp ../../static/default_config.toml default_config.toml
+}
 
 build() {
     cd "$_pkgname-$pkgver"
