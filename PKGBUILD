@@ -18,6 +18,11 @@ source=("$_pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz"
 sha256sums=('5796bfb2f868d2e4f6bfb63750588f282a57fb48e003f3d66c67b15c0e957a5c'
             'd16f4284fe6419603db058b878a32a56574a51409648a6ddbd1b516d50cb3eb7')
 
+prepare() {
+    cd "$_pkgname-$pkgver"
+    cp ../../static/default_config.toml src/default_config.toml
+}
+
 build() {
     cd "$_pkgname-$pkgver"
     cargo build --release --locked
