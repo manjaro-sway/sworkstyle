@@ -28,7 +28,7 @@ fallback = ''
 '/Stack Overflow/' = ''
 
 ## browsers
-'Google-chrome' = ''
+'/google-chrome/' = ''
 'Chromium' = ''
 'firefox' = ''
 'firefoxdeveloperedition' = ''
