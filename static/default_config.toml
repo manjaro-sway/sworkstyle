@@ -28,11 +28,11 @@ fallback = ''
 '/Stack Overflow/' = ''
 
 ## browsers
-'/google-chrome/' = ''
-'Chromium' = ''
+'google-chrome' = ''
+'chromium' = ''
 'firefox' = ''
 'firefoxdeveloperedition' = ''
-'Brave-browser' = ''
+'brave-browser' = ''
 
 ## default applications
 'foot' = ''
