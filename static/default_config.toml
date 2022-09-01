@@ -28,18 +28,21 @@ fallback = ''
 '/Stack Overflow/' = ''
 
 ## browsers
-'google-chrome' = ''
+'Google-chrome' = ''
+'Google-chrome-unstable' = ''
+'Google-chrome-beta' = ''
 'chromium' = ''
 'firefox' = ''
 'firefoxdeveloperedition' = ''
-'brave-browser' = ''
 
 ## default applications
-'foot' = ''
-'/foot/' = ''
-'pcmanfm' = ''
+'foot' = ''
+'/foot/' = ''
+'floating_shell' = ''
+'pcmanfm' = ''
 'pamac-manager' = ''
 '/Bluetooth/' = ''
+'file-roller' = ''
 
 ## email
 'Thunderbird' = ''
@@ -49,7 +52,7 @@ fallback = ''
 ## ide
 'code' = '﬏'
 'Code' = '﬏'
-'code-oss' = ''
+'/- Visual Studio Code/' = '﬏'
 '/IntelliJ/' = ''
 
 # messenger
@@ -57,9 +60,11 @@ fallback = ''
 'Slack' = ''
 '/Telegram/' = ''
 '/Microsoft Teams/' = ''
+'Signal' = ''
 
 ## auth
 'polkit-gnome-authentication-agent-1' = ''
+'Keybase' = ''
 
 ## additional applications
 'balena-etcher' = ''
@@ -74,3 +79,5 @@ fallback = ''
 'font-manager' = ''
 'lutris' = ''
 '/Wine/' = ''
+'Arctype' = ''
+'Around' = ''
