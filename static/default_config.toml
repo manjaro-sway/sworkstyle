@@ -46,6 +46,7 @@ fallback = ''
 'pamac-manager' = ''
 '/Bluetooth/' = ''
 'file-roller' = ''
+'swappy' = ''
 
 ## email
 'Thunderbird' = ''
@@ -57,6 +58,7 @@ fallback = ''
 'Code' = '﬏'
 '/- Visual Studio Code/' = '﬏'
 '/IntelliJ/' = ''
+'code-url-handler' = '﬏'
 
 # messenger
 'whatsapp-for-linux' = ''
