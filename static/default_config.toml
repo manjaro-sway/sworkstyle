@@ -28,11 +28,11 @@ fallback = ''
 '/Stack Overflow/' = ''
 
 ## browsers
+'google-chrome' = ''
 'Google-chrome' = ''
 'Google-chrome-unstable' = ''
-'Google-chrome-beta' = ''
-'google-chrome' = ''
 'google-chrome-unstable' = ''
+'Google-chrome-beta' = ''
 'google-chrome-beta' = ''
 'chromium' = ''
 'firefox' = ''
