@@ -14,9 +14,9 @@ optdepends=("otf-font-awesome")
 makedepends=("cargo")
 conflicts=(sworkstyle-git)
 source=("$_pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz"
-    "sworkstyle.man")
+        "sworkstyle.man")
 sha256sums=('fa85972721a0cd42a4b81c31052acfcf0690e24c57d06f6f3673a70f4f7e0e97'
-    'd16f4284fe6419603db058b878a32a56574a51409648a6ddbd1b516d50cb3eb7')
+            'd16f4284fe6419603db058b878a32a56574a51409648a6ddbd1b516d50cb3eb7')
 
 prepare() {
     cd "$_pkgname-$pkgver"
