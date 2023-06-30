@@ -37,6 +37,7 @@ fallback = ''
 'chromium' = ''
 'firefox' = ''
 'firefoxdeveloperedition' = ''
+'vivaldi-stable' = ''
 
 ## default applications
 'foot' = ''
@@ -68,6 +69,7 @@ fallback = ''
 'org.telegram.desktop' = ''
 '/Microsoft Teams/' = ''
 'Signal' = '󰍡'
+'discord' = '󰙯'
 
 ## auth
 'polkit-gnome-authentication-agent-1' = ''
