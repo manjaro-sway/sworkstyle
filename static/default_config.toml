@@ -51,6 +51,7 @@ fallback = ''
 ## email
 'Thunderbird' = ''
 'thunderbird' = ''
+'thunderbird-beta' = ''
 'evolution' = ''
 
 ## ide
@@ -64,6 +65,7 @@ fallback = ''
 'whatsapp-for-linux' = ''
 'Slack' = ''
 '/Telegram/' = ''
+'org.telegram.desktop' = ''
 '/Microsoft Teams/' = ''
 'Signal' = ''
 
@@ -88,3 +90,4 @@ fallback = ''
 '/Wine/' = ''
 'Arctype' = ''
 'Around' = ''
+'org.wezfurlong.wezterm' = ''
