@@ -44,7 +44,7 @@ fallback = ''
 '/foot/' = ''
 'floating_shell' = ''
 'pcmanfm' = ''
-/^Open Folder/ = ''
+/Open Folder/ = ''
 'pamac-manager' = ''
 '/Bluetooth/' = ''
 'file-roller' = '󰀼'
@@ -61,7 +61,7 @@ fallback = ''
 'Code' = ''
 '/- Visual Studio Code/' = ''
 'code-oss' = ''
-/^Code - OSS/
+/Code - OSS/
 '/IntelliJ/' = ''
 'code-url-handler' = ''
 
