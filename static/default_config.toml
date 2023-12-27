@@ -82,6 +82,7 @@ fallback = ''
 ## additional applications
 'balena-etcher' = ''
 'Steam' = ''
+'/steam/' = ''
 'vlc' = '󰕼'
 'org.qbittorrent.qBittorrent' = ''
 'transmission-gtk' = ''
