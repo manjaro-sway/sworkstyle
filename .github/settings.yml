@@ -1,4 +1,4 @@
 _extends: manjaro-contrib/.github
 repository:
   homepage: https://aur.archlinux.org/sworkstyle.git
-
+  topics: arch, package, x86-64, aarch64
