@@ -42,6 +42,7 @@ fallback = ''
 ## default applications
 'foot' = ''
 '/foot/' = ''
+'footclient' = ''
 'floating_shell' = ''
 'pcmanfm' = ''
 '/^Open Folder/' = ''
@@ -74,6 +75,7 @@ fallback = ''
 'Signal' = '󰍡'
 'discord' = '󰙯'
 'WebCord' = '󰙯'
+'vesktop' = '󰙯'
 
 ## auth
 'polkit-gnome-authentication-agent-1' = ''
