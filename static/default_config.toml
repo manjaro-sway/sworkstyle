@@ -37,7 +37,7 @@ fallback = ''
 'chromium' = ''
 'firefox' = ''
 'firefoxdeveloperedition' = ''
-'vivaldi-stable' = ''
+'vivaldi-stable' = ''
 
 ## default applications
 'foot' = ''
