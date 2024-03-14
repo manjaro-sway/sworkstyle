@@ -76,6 +76,7 @@ fallback = ''
 'discord' = '󰙯'
 'WebCord' = '󰙯'
 'vesktop' = '󰙯'
+'Element' = '󰘨'
 
 ## auth
 'polkit-gnome-authentication-agent-1' = ''
