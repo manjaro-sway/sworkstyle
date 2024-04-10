@@ -52,9 +52,9 @@ fallback = ''
 'swappy' = '󰄄'
 
 ## email
-'Thunderbird' = ''
-'thunderbird' = ''
-'thunderbird-beta' = ''
+'Thunderbird' = ''
+'thunderbird' = ''
+'thunderbird-beta' = ''
 'evolution' = ''
 
 ## ide
@@ -64,7 +64,7 @@ fallback = ''
 'code-oss' = ''
 '/^Code - OSS/' = ''
 '/IntelliJ/' = ''
-'code-url-handler' = ''
+'MongoDB Compass' = '󰌪''
 
 # messenger
 'whatsapp-for-linux' = ''
@@ -73,7 +73,7 @@ fallback = ''
 'org.telegram.desktop' = ''
 '/Microsoft Teams/' = ''
 'Signal' = '󰍡'
-'Mattermost' = '󰍡'
+'Mattermost' = '󰣕'
 'discord' = '󰙯'
 'WebCord' = '󰙯'
 'vesktop' = '󰙯'
@@ -84,6 +84,7 @@ fallback = ''
 'Keybase' = '󱕴'
 
 ## additional applications
+'code-url-handler' = ''
 'balena-etcher' = ''
 'Steam' = ''
 '/steam/' = ''
