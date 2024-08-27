@@ -38,6 +38,7 @@ fallback = ''
 'firefox' = ''
 'firefoxdeveloperedition' = ''
 'vivaldi-stable' = ''
+'zen-alpha' = ''
 
 ## default applications
 'foot' = ''
@@ -65,6 +66,7 @@ fallback = ''
 '/^Code - OSS/' = ''
 '/IntelliJ/' = ''
 'MongoDB Compass' = '󰌪'
+'dev.zed.Zed' = ''
 
 # messenger
 'whatsapp-for-linux' = ''
