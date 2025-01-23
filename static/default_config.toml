@@ -38,7 +38,7 @@ fallback = ''
 'firefox' = ''
 'firefoxdeveloperedition' = ''
 'vivaldi-stable' = ''
-'zen-alpha' = ''
+'zen' = ''
 
 ## default applications
 'foot' = ''
