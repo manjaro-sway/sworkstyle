@@ -1,4 +1,7 @@
-pkg
-src
-swayest_workstyle
-*.pkg.tar.zst
+*
+!static/
+!static/*
+!PKGBUILD
+!SRCINFO
+!.github
+!.github/**/*

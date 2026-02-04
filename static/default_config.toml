@@ -1,0 +1,107 @@
+#
+# pattern: Can either be the exact "app_name" (app_id/class) of the window or a regex string in the format of `"/{regex}/"` which will match the window "title".
+# icon: Your beatiful icon
+#
+# verbose format:
+#
+# '{pattern}' = { type = 'generic' | 'exact', value = '{icon}' }
+#
+#
+# If it couldn't match something it will print:
+#
+# WARN [sworkstyle:config] No match for '{app_name}' with title '{title}'
+#
+# You can use {title} to do a generic matching
+# You can use {app_name} to do an exact match
+# You can find icons for nerd fonts here: https://www.nerdfonts.com/cheat-sheet
+
+fallback = ''
+
+[matching]
+## partials
+'/GitHub/' = ''
+'/GitLab/' = ''
+'/NVIM ?\w*/' = ''
+'/npm/' = ''
+'/node/' = ''
+'/yarn/' = '󰄛'
+'/Stack Overflow/' = ''
+
+## browsers
+'google-chrome' = ''
+'Google-chrome' = ''
+'Google-chrome-unstable' = ''
+'google-chrome-unstable' = ''
+'Google-chrome-beta' = ''
+'google-chrome-beta' = ''
+'chromium' = ''
+'firefox' = ''
+'firefoxdeveloperedition' = ''
+'vivaldi-stable' = ''
+'zen' = ''
+
+## default applications
+'foot' = ''
+'/foot/' = ''
+'footclient' = ''
+'floating_shell' = ''
+'pcmanfm' = ''
+'/^Open Folder/' = ''
+'pamac-manager' = ''
+'/Bluetooth/' = ''
+'file-roller' = '󰀼'
+'swappy' = '󰄄'
+
+## email
+'Thunderbird' = ''
+'thunderbird' = ''
+'thunderbird-beta' = ''
+'evolution' = ''
+
+## ide
+'code' = ''
+'Code' = ''
+'/- Visual Studio Code/' = ''
+'code-oss' = ''
+'/^Code - OSS/' = ''
+'/IntelliJ/' = ''
+'MongoDB Compass' = '󰌪'
+'dev.zed.Zed' = ''
+
+# messenger
+'whatsapp-for-linux' = ''
+'Slack' = ''
+'/Telegram/' = ''
+'org.telegram.desktop' = ''
+'/Microsoft Teams/' = ''
+'Signal' = '󰍡'
+'Mattermost' = '󰣕'
+'discord' = '󰙯'
+'WebCord' = '󰙯'
+'vesktop' = '󰙯'
+'Element' = '󰘨'
+
+## auth
+'polkit-gnome-authentication-agent-1' = ''
+'Keybase' = '󱕴'
+
+## additional applications
+'code-url-handler' = ''
+'balena-etcher' = ''
+'Steam' = ''
+'/steam/' = ''
+'vlc' = '󰕼'
+'org.qbittorrent.qBittorrent' = ''
+'transmission-gtk' = ''
+'Insomnia' = ''
+'Bitwarden' = ''
+'Spotify' = ''
+'YouTube Music' = '󰝚'
+'Alacritty' = ''
+'kitty' = ''
+'font-manager' = ''
+'lutris' = ''
+'/Wine/' = ''
+'Arctype' = ''
+'Around' = '󰍫'
+'org.wezfurlong.wezterm' = ''
