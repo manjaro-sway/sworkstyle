@@ -1,9 +1,9 @@
 pkgbase = sworkstyle
 	pkgdesc = Swayest Workstyle - This tool will rename workspaces to the icons configured. Mainly meant for Sway WM
 	pkgver = 1.3.9
-	pkgrel = 1
+	pkgrel = 5
 	url = https://github.com/Lyr-7D1h/swayest_workstyle
-	arch = x86_64
+	arch = any
 	license = MIT
 	makedepends = cargo
 	depends = gcc-libs
