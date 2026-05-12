@@ -1,0 +1,58 @@
+name: rebase
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '*/30 * * * *'
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  rebase:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: checkout
+        uses: actions/checkout@900f2210b1d28bbbd0bd22d17926b9e224e8f231 # main
+        with:
+          token: ${{ secrets.BOOTSTRAP_WORKFLOWS || github.token }}
+      - run: yq '.repository.topics = "arch, package"' -i .github/settings.yml
+      - id: version
+        uses: manjaro-contrib/action-pkgbuild-info@main
+      - if: steps.version.outputs.x86_64 == 'true'
+        uses: mikefarah/yq@751d8ad57b84f1794661bc70c0afb92a22ad7b3c # v4.53.2
+        with:
+          cmd: yq '.repository.topics += ", x86-64"' -i .github/settings.yml
+      - if: steps.version.outputs.aarch64 == 'true'
+        uses: mikefarah/yq@751d8ad57b84f1794661bc70c0afb92a22ad7b3c # v4.53.2
+        with:
+          cmd: yq '.repository.topics += ", aarch64"' -i .github/settings.yml
+      - if: steps.version.outputs.any == 'true'
+        uses: mikefarah/yq@751d8ad57b84f1794661bc70c0afb92a22ad7b3c # v4.53.2
+        with:
+          cmd: yq '.repository.topics += ", any"' -i .github/settings.yml
+      - if: steps.version.outputs.python == 'true'
+        uses: mikefarah/yq@751d8ad57b84f1794661bc70c0afb92a22ad7b3c # v4.53.2
+        with:
+          cmd: yq '.repository.topics += ", python"' -i .github/settings.yml
+      - name: commit
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "Manjaro Bot"
+            git config user.email "info@jonas-strassel.de"
+            git add .github/settings.yml
+            git commit -m "chore(actions-rebase): update topics"
+            git push
+          fi
+      - name: rebase
+        uses: manjaro-contrib/action-rebase@main
+        with:
+          token: ${{ secrets.BOOTSTRAP_WORKFLOWS || github.token }}
+          upstream: https://aur.archlinux.org/sworkstyle.git
+          dispatch-target: ${{ vars.PACKAGES_REPO }}
+          dispatch-token: ${{ secrets.DISPATCH_TOKEN }}
+      

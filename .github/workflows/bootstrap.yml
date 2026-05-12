@@ -1,0 +1,19 @@
+name: bootstrap
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 1-23/2 * * *'
+
+jobs:
+  bootstrap_actions:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: checkout
+        uses: actions/checkout@900f2210b1d28bbbd0bd22d17926b9e224e8f231 # main
+        with:
+          token: ${{ secrets.BOOTSTRAP_WORKFLOWS || github.token }}
+      - id: bootstrap
+        uses: manjaro-contrib/action-bootstrap-actions@main
+        with:
+          upstream: https://aur.archlinux.org/sworkstyle.git
