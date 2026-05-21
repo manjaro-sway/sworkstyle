@@ -74,6 +74,7 @@ fallback = ''
 # messenger
 'whatsapp-for-linux' = ''
 'Slack' = ''
+'slack' = ''
 '/Telegram/' = ''
 'org.telegram.desktop' = ''
 '/Microsoft Teams/' = ''
